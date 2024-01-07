@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    min-height: 100vh;
+  }
+}
+
+.jkd-nav-style {
+  @apply w-full h-intro max-md:h-mobile_intro transition-all ease-in-out 
+  duration-500 bg-gradient-to-br from-very_light_red_2 to-light_red_2 
+  rounded-bl-4xl relative z-0;
+}
+.jkd-logo {
+  @apply absolute -bottom-36 max-lg:-bottom-24 max-md:-bottom-20
+   max-sm:-bottom-10 transition-all z-10;
+}
+.jkd-nav-elements {
+  @apply absolute w-full px-36 py-16 max-lg:px-6 max-md:py-4 flex items-center
+  max-md:justify-between gap-12 transition-all duration-200 z-30;
+}
+.jkd-main-elements {
+  @apply w-full flex justify-between items-center max-md:fixed
+max-md:bg-white max-md:top-16 max-md:-right-74 max-md:w-74 max-md:flex-col 
+  max-md:gap-4 max-md:p-6 max-md:rounded-md transition-all duration-500;
+}
+.jkd-menu-item {
+  @apply text-white font-bold flex 
+  flex-col items-center gap-2;
+}
+.jkd-item-style {
+  @apply flex items-center gap-3 cursor-pointer 
+  hover:underline max-md:text-very_dark_grayish_blue relative;
+}
+.jkd-small-menu {
+  @apply w-full text-gray-500 flex flex-col items-center 
+  justify-center gap-4 py-4 bg-slate-300 rounded-md md:fixed
+  md:top-32 md:w-28 md:bg-white;
+}
+.jkd-small-menu-item {
+  @apply hover:underline font-medium;
+}
+.jkd-login {
+  @apply text-white font-bold cursor-pointer
+   hover:text-2xl transition-all
+   ease-in-out max-md:text-very_dark_grayish_blue;
+}
+.jkd-signup {
+  @apply bg-white px-10 py-3 cursor-pointer text-lg font-bold
+   text-very_light_red hover:text-white hover:bg-very_light_red
+    max-md:bg-gradient-to-r max-md:from-very_light_red_2
+  max-md:to-light_red_2 max-md:text-white max-md:hover:to-very_light_red_2 
+  max-md:hover:from-light_red_2 transition-all ease-in-out rounded-full;
+}
+.jkd-content-title {
+  @apply text-xl text-very_dark_desaturated_blue font-overpass font-bold mb-5;
+}
+.jkd-content-paragraph {
+  @apply text-sm text-very_dark_grayish_blue leading-6 tracking-wide mb-12;
+}
+.jkd-footer-box {
+  @apply text-white flex flex-col gap-2;
+}
+.jdk-footer-items {
+  @apply font-extrabold hover:underline mb-3 cursor-pointer transition-all duration-300;
+}
